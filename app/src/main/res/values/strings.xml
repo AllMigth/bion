@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BIN</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="hola_bienvenido">Hola, bienvenido</string>
+    <string name="ingresar_para_continuar">Ingresar para continuar</string>
+    <string name="descripcion_imagen_dash">Logo de bion, hombre observa una pizarra</string>
+    <string name="password">Constraseña</string>
+    <string name="tareas_para_todas_tu_materias">Tareas para todas tu materias</string>
+    <string name="bion">BION</string>
+</resources>
