@@ -11,6 +11,7 @@
     >
 
     <ImageView
+
         android:id="@+id/logo_image"
         android:layout_width="150dp"
         android:transitionName="logo_image"
@@ -19,7 +20,7 @@
         android:contentDescription="@string/descripcion_imagen_dash" />
 
     <TextView
-        android:transitionName="logo_name"
+        android:transitionName="logo_text"
         android:textColor="#000000"
         android:id="@+id/logo_name"
         android:layout_width="wrap_content"
@@ -29,6 +30,8 @@
         android:textSize="40sp"/>
 
     <TextView
+        android:id="@+id/subText"
+        android:transitionName="logo_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ingresar_para_continuar"
@@ -42,6 +45,7 @@
         android:layout_marginBottom="20dp">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:transitionName="logo_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -58,6 +62,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:transitionName="logo_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/password"
@@ -68,6 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
+                android:inputType="textPassword"
                 >
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -75,11 +81,12 @@
         </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:transitionName="logo_image"
        android:layout_width="200dp"
        android:layout_height="wrap_content"
        android:background="#00000000"
-        android:text="contraseña olvidada"
-       android:layout_gravity="right"
+        android:text="@string/contrase_a_olvidada"
+       android:layout_gravity="end"
         android:elegantTextHeight="true"
        android:elevation="0dp"
         android:layout_margin="5dp"/>
@@ -90,19 +97,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorBotonLogin"
-        android:layout_gravity="left"
-        android:text="GO"
+        android:layout_gravity="start"
+        android:text="@string/go"
+        android:transitionName="logo_image"
         android:elevation="0dp"/>
 
         <Button
+            android:id="@+id/nuevoUsuario"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:layout_gravity="left"
-            android:text="Nuevo usuario"
-            android:elevation="0dp"/>
+            android:layout_gravity="end"
+            android:text="@string/nuevo_usuario"
+            android:elevation="0dp"
+            android:transitionName="logo_signup_tran"
+            />
 
     </LinearLayout>
 

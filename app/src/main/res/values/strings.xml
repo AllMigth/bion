@@ -7,4 +7,12 @@
     <string name="password">Constraseña</string>
     <string name="tareas_para_todas_tu_materias">Tareas para todas tu materias</string>
     <string name="bion">BION</string>
+    <string name="contrase_a_olvidada">contraseña olvidada</string>
+    <string name="nuevo_usuario">Nuevo usuario</string>
+    <string name="go">GO</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="nombreCompleto">Nombre Completo</string>
+    <string name="nombreUsuarioSignUp">Nombre de usuario</string>
+    <string name="numeroTelefonico">Numero Telefonico</string>
+
 </resources>
