@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class SignUp extends AppCompatActivity {
-    Button backToLogin;
+    Button backToLogin, regBtn;
     TextInputLayout name, username, email, phoneNo, password;
 
 /*    FirebaseDatabase rootNode;
@@ -21,13 +21,12 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        name = findViewById(R.id.regName);
+        username = findViewById(R.id.regUserName);
+        email = findViewById(R.id.regEmail);
+        phoneNo = findViewById(R.id.regPhoneNo);
+        password = findViewById(R.id.regPassword);
         backToLogin = findViewById(R.id.yaTienesCuenta);
-        name = findViewById(R.id.nombreCompleto);
-        username = findViewById(R.id.nombreDeUsuario);
-        email = findViewById(R.id.email);
-        phoneNo = findViewById(R.id.numeroTelefonico);
-        password = findViewById(R.id.password);
-
 
         backToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,14 +127,11 @@ public class SignUp extends AppCompatActivity {
             return;
         }
 
-        /*String name = name.getEditText().getText().toString();
-        String username = nombreDeUsuario.getEditText().getText().toString();
-        String phoneNo = numeroTelefonico.getEditText().getText().toString();
-        String password = password.getEditText().getText().toString();
+        String name = regName.getEditText().getText().toString();
+        String username = regUsername.getEditText().getText().toString();
+        String phoneNo = regPhoneNo.getEditText().getText().toString();
+        String password = regPassword.getEditText().getText().toString();
         UserHelperClass helperClass = new UserHelperClass(name, username, email, phoneNo, password);
-        reference.child(username).setValue(helperClass);*/
+        reference.child(username).setValue(helperClass);
     }
-
-
-
 }
