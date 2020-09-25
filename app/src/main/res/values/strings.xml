@@ -14,5 +14,6 @@
     <string name="nombreCompleto">Nombre Completo</string>
     <string name="nombreUsuarioSignUp">Nombre de usuario</string>
     <string name="numeroTelefonico">Numero Telefonico</string>
+    <string name="email">Email</string>
 
 </resources>

@@ -85,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="@string/nombreCompleto"
+                android:hint="@string/email"
                 >
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -132,6 +132,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/go"
+        android:onClick="registerUser"
         android:background="#000"
         android:textColor="#fff"
         />
